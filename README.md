@@ -54,6 +54,23 @@ describe('Simple cases', () => {
 });
 ```
 
+Mock `datasource` is a function:
+
+```typescript
+const usersDynamoTable = vi.fn().mockImplementation(({ id }: { id: number }) => {
+  const items = [
+    { id: 1, name: 'test bar', email: 'foo@bar.com', address: '1234 Main St' },
+    { id: 2, name: 'test foo', email: 'bar@foo.com', address: '1235 Sub St' }
+  ];
+
+  if (!!id && typeof id === 'number') {
+    return { items: [items.find( item => item.id === id )] };
+  }
+
+  return { items };
+});
+```
+
 ## Contributing
 
 Feel free to create a PR and extend the `@aws-appsync/utils` mock any time or just create an issue.
