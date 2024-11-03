@@ -1,0 +1,31 @@
+{
+  "name": "appsync-mock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@aws-appsync/eslint-plugin": "^1.6.0",
+    "@aws-appsync/utils": "1.8.0",
+    "@graphql-tools/schema": "^10.0.0",
+    "@types/node": "20.14.10",
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "@typescript-eslint/parser": "^6.3.0",
+    "aws-cdk": "2.147.2",
+    "esbuild": "^0.18.17",
+    "eslint": "^8.46.0",
+    "graphql": "^16.7.1",
+    "typescript": "~5.1.3",
+    "vitest": "^2.0.2"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.147.2",
+    "constructs": "^10.3.0"
+  },
+  "author": "csaba.ivancza@gmail.com",
+  "license": "ISC"
+}
