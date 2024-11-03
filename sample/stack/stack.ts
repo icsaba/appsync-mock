@@ -1,7 +1,7 @@
 import path from 'node:path';
 import * as cdk from 'aws-cdk-lib';
 import { Construct } from 'constructs';
-import { AppSyncHelper } from '../../appsync-helper';
+import { AppSyncHelper } from '../../src/appsync-helper';
 import * as dynamodb from 'aws-cdk-lib/aws-dynamodb';
 import { FieldLogLevel } from 'aws-cdk-lib/aws-appsync';
 import { Certificate } from 'aws-cdk-lib/aws-certificatemanager';

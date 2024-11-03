@@ -1,6 +1,6 @@
 import { describe, it, beforeAll, vi, expect } from 'vitest';
-import AppSyncMock from '../appsync-mock';
 import { Context } from '@aws-appsync/utils';
+import AppSyncMock from '../src/appsync-mock';
 import createStack from '../sample/stack/stack.factory';
 
 describe('Pipeline Resolver', () => {
